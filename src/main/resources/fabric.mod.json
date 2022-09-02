@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "basictrash",
+  "version": "${version}",
+
+  "name": "Basic Trash",
+  "description": "Adds a /trash command to help get rid of unwanted items easily.",
+  "authors": [
+    "Phaxius"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Phaxius/BasicTrash",
+    "sources": "https://github.com/Phaxius/BasicTrash"
+  },
+
+  "license": "MIT",
+  "icon": "assets/basictrash/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.phaxcraft.basictrash.BasicTrash"
+    ]
+  },
+  "mixins": [
+    "basictrash.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "~1.18",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
